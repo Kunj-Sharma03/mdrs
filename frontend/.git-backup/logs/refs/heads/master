@@ -1,0 +1,5 @@
+0000000000000000000000000000000000000000 59e35c5f7089b28cb9f9660f2d3c9b90e7f9dcfc Kunj-Sharma03 <og.ryouu@gmail.com> 1755858977 +0530	commit (initial): Initial commit from Create Next App
+59e35c5f7089b28cb9f9660f2d3c9b90e7f9dcfc 6e48e59759a99562aeeee63edd1c52f309158b4b Kunj-Sharma03 <og.ryouu@gmail.com> 1755960469 +0530	commit: feat: Implement new homepage layout with Aurora background and navigation
+6e48e59759a99562aeeee63edd1c52f309158b4b 2ee159bd099b777d6097ba5e02b07ba3635f1daa Kunj-Sharma03 <og.ryouu@gmail.com> 1759157021 +0530	commit: everything is done for now, waiting for further required changes
+2ee159bd099b777d6097ba5e02b07ba3635f1daa a8899bf5256f11fb7095a24e96ccc2f61ee1d0a7 Kunj-Sharma03 <og.ryouu@gmail.com> 1759303927 +0530	commit: fixed minor issues and website is now mobile compatible
+a8899bf5256f11fb7095a24e96ccc2f61ee1d0a7 62fb7f7726bf4d0d8b228849b7800615de4b3a1e Kunj-Sharma03 <og.ryouu@gmail.com> 1759304862 +0530	commit: vercel fixes

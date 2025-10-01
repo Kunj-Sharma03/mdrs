@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+/* Custom Nohemi Font Family */
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/fonts/Nohemi-Regular-BF6438cc579d934.woff') format('woff'),
+       url('/fonts/Nohemi-Regular-BF6438cc4d0e493.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/fonts/Nohemi-Medium-BF6438cc57ddecd.woff') format('woff'),
+       url('/fonts/Nohemi-Medium-BF6438cc5883899.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/fonts/Nohemi-SemiBold-BF6438cc57db2ff.woff') format('woff'),
+       url('/fonts/Nohemi-SemiBold-BF6438cc588a48a.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/fonts/Nohemi-Bold-BF6438cc577b524.woff') format('woff'),
+       url('/fonts/Nohemi-Bold-BF6438cc5812315.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/fonts/Nohemi-ExtraBold-BF6438cc5761ae2.woff') format('woff'),
+       url('/fonts/Nohemi-ExtraBold-BF6438cc5881baf.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nohemi';
+  src: url('/fonts/Nohemi-Black-BF6438cc565e67b.woff') format('woff'),
+       url('/fonts/Nohemi-Black-BF6438cc58744d4.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Nohemi', system-ui, -apple-system, sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Loading Animations */
+@keyframes morphLogo {
+  0% {
+    transform: translate(-50%, -50%) scale(2.67);
+  }
+  100% {
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes morphText {
+  0% {
+    font-size: 5rem;
+    text-align: center;
+  }
+  100% {
+    font-size: 1.25rem;
+    text-align: left;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.loading-morph {
+  animation: morphLogo 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.text-morph {
+  animation: morphText 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
